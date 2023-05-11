@@ -7,3 +7,7 @@ Just a sample iOS project that reproduces the diamond problem we have when a pac
 More info:
 
 https://forums.swift.org/t/swift-package-with-two-dynamic-targets-produces-errors-about-static-targets/43828
+
+## Solution
+
+Go to the target - Build Settings - User Defined and change `DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC` to `YES`.
