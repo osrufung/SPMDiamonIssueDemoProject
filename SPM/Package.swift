@@ -13,6 +13,7 @@ let package = Package(
             targets: ["SPM"]),
         .library(
             name: "SubModule",
+            type: .dynamic,
             targets: ["SubModule"]),
     ],
     dependencies: [

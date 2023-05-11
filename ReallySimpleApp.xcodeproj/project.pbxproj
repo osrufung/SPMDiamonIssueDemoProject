@@ -14,9 +14,10 @@
 		AA748F9B2A0D28140004B16E /* ReallySimpleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA748F9A2A0D28140004B16E /* ReallySimpleAppTests.swift */; };
 		AA748FA52A0D28140004B16E /* ReallySimpleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA748FA42A0D28140004B16E /* ReallySimpleAppUITests.swift */; };
 		AA748FA72A0D28140004B16E /* ReallySimpleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA748FA62A0D28140004B16E /* ReallySimpleAppUITestsLaunchTests.swift */; };
-		AA94B8F02A0D28E3000D88E2 /* SPM in Frameworks */ = {isa = PBXBuildFile; productRef = AA94B8EF2A0D28E3000D88E2 /* SPM */; };
-		AA94B8F12A0D298A000D88E2 /* SPM in Embed Frameworks */ = {isa = PBXBuildFile; productRef = AA94B8EF2A0D28E3000D88E2 /* SPM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		AA94BC022A0D2CAC000D88E2 /* SubModule in Frameworks */ = {isa = PBXBuildFile; productRef = AA94BC012A0D2CAC000D88E2 /* SubModule */; };
+		AA94BC052A0D2DDF000D88E2 /* SPM in Frameworks */ = {isa = PBXBuildFile; productRef = AA94BC042A0D2DDF000D88E2 /* SPM */; };
+		AA94BC072A0D2DEF000D88E2 /* SubModule in Frameworks */ = {isa = PBXBuildFile; productRef = AA94BC062A0D2DEF000D88E2 /* SubModule */; };
+		AA94BC082A0D2E9F000D88E2 /* SPM in Embed Frameworks */ = {isa = PBXBuildFile; productRef = AA94BC042A0D2DDF000D88E2 /* SPM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AA94BC092A0D2EA0000D88E2 /* SubModule in Embed Frameworks */ = {isa = PBXBuildFile; productRef = AA94BC062A0D2DEF000D88E2 /* SubModule */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AA94B8F12A0D298A000D88E2 /* SPM in Embed Frameworks */,
+				AA94BC082A0D2E9F000D88E2 /* SPM in Embed Frameworks */,
+				AA94BC092A0D2EA0000D88E2 /* SubModule in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,8 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA94B8F02A0D28E3000D88E2 /* SPM in Frameworks */,
-				AA94BC022A0D2CAC000D88E2 /* SubModule in Frameworks */,
+				AA94BC052A0D2DDF000D88E2 /* SPM in Frameworks */,
+				AA94BC072A0D2DEF000D88E2 /* SubModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,8 +176,8 @@
 			);
 			name = ReallySimpleApp;
 			packageProductDependencies = (
-				AA94B8EF2A0D28E3000D88E2 /* SPM */,
-				AA94BC012A0D2CAC000D88E2 /* SubModule */,
+				AA94BC042A0D2DDF000D88E2 /* SPM */,
+				AA94BC062A0D2DEF000D88E2 /* SubModule */,
 			);
 			productName = ReallySimpleApp;
 			productReference = AA748F862A0D28120004B16E /* ReallySimpleApp.app */;
@@ -452,6 +454,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ReallySimpleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = AS88JDHZ77;
+				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -481,6 +484,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ReallySimpleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = AS88JDHZ77;
+				DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -619,11 +623,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AA94B8EF2A0D28E3000D88E2 /* SPM */ = {
+		AA94BC042A0D2DDF000D88E2 /* SPM */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SPM;
 		};
-		AA94BC012A0D2CAC000D88E2 /* SubModule */ = {
+		AA94BC062A0D2DEF000D88E2 /* SubModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SubModule;
 		};

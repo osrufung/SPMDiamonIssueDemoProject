@@ -1,0 +1,12 @@
+Target dependency graph (5 targets)
+SPM in SPM, no dependencies
+SPM in SPM, depends on:
+SPM in SPM (explicit)
+SubModule in SPM, depends on:
+SPM in SPM (explicit)
+SubModule in SPM, depends on:
+SubModule in SPM (explicit)
+SPM in SPM (explicit)
+ReallySimpleApp in ReallySimpleApp, depends on:
+SPM in SPM (explicit)
+SubModule in SPM (explicit)
