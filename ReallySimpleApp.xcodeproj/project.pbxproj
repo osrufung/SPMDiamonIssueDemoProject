@@ -14,6 +14,9 @@
 		AA748F9B2A0D28140004B16E /* ReallySimpleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA748F9A2A0D28140004B16E /* ReallySimpleAppTests.swift */; };
 		AA748FA52A0D28140004B16E /* ReallySimpleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA748FA42A0D28140004B16E /* ReallySimpleAppUITests.swift */; };
 		AA748FA72A0D28140004B16E /* ReallySimpleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA748FA62A0D28140004B16E /* ReallySimpleAppUITestsLaunchTests.swift */; };
+		AA94B8F02A0D28E3000D88E2 /* SPM in Frameworks */ = {isa = PBXBuildFile; productRef = AA94B8EF2A0D28E3000D88E2 /* SPM */; };
+		AA94B8F12A0D298A000D88E2 /* SPM in Embed Frameworks */ = {isa = PBXBuildFile; productRef = AA94B8EF2A0D28E3000D88E2 /* SPM */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AA94BC022A0D2CAC000D88E2 /* SubModule in Frameworks */ = {isa = PBXBuildFile; productRef = AA94BC012A0D2CAC000D88E2 /* SubModule */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AA94B8F22A0D298A000D88E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA94B8F12A0D298A000D88E2 /* SPM in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AA748F862A0D28120004B16E /* ReallySimpleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReallySimpleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA748F892A0D28120004B16E /* ReallySimpleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReallySimpleAppApp.swift; sourceTree = "<group>"; };
@@ -44,6 +61,7 @@
 		AA748FA02A0D28140004B16E /* ReallySimpleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReallySimpleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA748FA42A0D28140004B16E /* ReallySimpleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReallySimpleAppUITests.swift; sourceTree = "<group>"; };
 		AA748FA62A0D28140004B16E /* ReallySimpleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReallySimpleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA94B8ED2A0D28C1000D88E2 /* SPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SPM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA94B8F02A0D28E3000D88E2 /* SPM in Frameworks */,
+				AA94BC022A0D2CAC000D88E2 /* SubModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +94,12 @@
 		AA748F7D2A0D28120004B16E = {
 			isa = PBXGroup;
 			children = (
+				AA94B8ED2A0D28C1000D88E2 /* SPM */,
 				AA748F882A0D28120004B16E /* ReallySimpleApp */,
 				AA748F992A0D28140004B16E /* ReallySimpleAppTests */,
 				AA748FA32A0D28140004B16E /* ReallySimpleAppUITests */,
 				AA748F872A0D28120004B16E /* Products */,
+				AA94B8EE2A0D28E3000D88E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +149,13 @@
 			path = ReallySimpleAppUITests;
 			sourceTree = "<group>";
 		};
+		AA94B8EE2A0D28E3000D88E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +166,17 @@
 				AA748F822A0D28120004B16E /* Sources */,
 				AA748F832A0D28120004B16E /* Frameworks */,
 				AA748F842A0D28120004B16E /* Resources */,
+				AA94B8F22A0D298A000D88E2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ReallySimpleApp;
+			packageProductDependencies = (
+				AA94B8EF2A0D28E3000D88E2 /* SPM */,
+				AA94BC012A0D2CAC000D88E2 /* SubModule */,
+			);
 			productName = ReallySimpleApp;
 			productReference = AA748F862A0D28120004B16E /* ReallySimpleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -583,6 +617,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA94B8EF2A0D28E3000D88E2 /* SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SPM;
+		};
+		AA94BC012A0D2CAC000D88E2 /* SubModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SubModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA748F7E2A0D28120004B16E /* Project object */;
 }
